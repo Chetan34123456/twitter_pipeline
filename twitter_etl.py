@@ -40,4 +40,4 @@ def run_twitter_etl():
         list.append(refined_tweet)
 
     df = pd.DataFrame(list)
-    df.to('refined_tweets.csv')
+    df.to_parquet('refined_tweets.parquet')
